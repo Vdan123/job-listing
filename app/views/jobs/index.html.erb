@@ -2,6 +2,9 @@
 <li><%= link_to("按照薪资上限排序", jobs_path(order: "by_upper_bound"))%></li>
 <li><%= link_to("按照资金下限排序", jobs_path(order: "by_lower_bound"))%></li>
 <li><%= link_to("时间排序", jobs_path)%></li>
+
+<%= render :partial => "jobs/search_bar"%>
+
 <thead>
   <tr>
     <td>职位</td>
